@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "0d3d8512-ae01-47d4-a081-098d57634d75",
+		"name": "ProjectRestapilaravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30180180",
+		"_collection_link": "https://www.postman.com/lunar-moon-663097/workspace/projectrestapi-dimas-aji/collection/30180180-0d3d8512-ae01-47d4-a081-098d57634d75?action=share&source=collection_link&creator=30180180"
+	},
+	"item": [
+		{
+			"name": "Get Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjVhOWU1ZDNiZDg5ZWExODc1ZWJmNTQ4MDgwYzUyYzNlN2IyMmQ2ZGM4YWI2ZjgwMzdmNTNmY2E1ODNiNWQwOWQxYjJhNTcxMTQxNzFlYTEiLCJpYXQiOjE3MDExNzU0ODIuNTU1MDA1LCJuYmYiOjE3MDExNzU0ODIuNTU1MDExLCJleHAiOjE3MzI3OTc4ODIuNTQ2NTgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.PW9RnSS91yURMsj_mLmxmroTQ3puhrqviqNSD_HKDT8iI8u0WlRVQtJ4UV7sN1j1KV8_9x2YxsWnzI-YnWuhnHmpDSBbMSYMBGqrNimPiozwPcX0Av3PltCIzSUQ_HcJK-Itq5YYmLbWnrSuzexGu-QhLdqaQerHXj2Rco7eqbnpezhM5xnfkuyIW2BDPDY_LbbyF4IDe6qVxqw_3IdAL8tk_lCuiny9-7qXIXv-BohZG_dlwpinRSA_XT2phsYBu-MS9SHrB19xIPkJRR9pYsGICi8JKfAeh0j-UAGEZzgvOZAygIsUpxxtZ0jfEa0NqLK4etjrn-IUcmnxc2jJlmlG-dAXkxowyKFZZe2WcXJWhBfqsM89681MptyqerfmswOl6vaVsoCTXPWpgDLdkbYShjPVT3g-1wtp2om8gwNCoExmEIBVf_Md8c7kMbgOMGc-ab8ZDdDKKdi7Qkqcv2-LSK6moIfOe9CoRnUgVDLzKkCDJZKj8cKfbhkYbBHVnpVJ4uBhUoYH8vo2jm95h2hCI5cCBjbT4CPh00i0eiMQtPmCqNTcnWEBvcSo75ZTGUjDCe9jk4a9rjGRaMXlQnwbqBXn-h_LCdpw8NgmjA8CkeptXSsDHhPoscnkeWfM3G0MACLfvwvUd-01ALs7AOzsM8XjekFQevRzHUhWT9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/project",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "dimasaji",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "diamas44@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Akugtaau424",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "Akugtaau424",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "diamas444@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Akugtaau4244",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjVhOWU1ZDNiZDg5ZWExODc1ZWJmNTQ4MDgwYzUyYzNlN2IyMmQ2ZGM4YWI2ZjgwMzdmNTNmY2E1ODNiNWQwOWQxYjJhNTcxMTQxNzFlYTEiLCJpYXQiOjE3MDExNzU0ODIuNTU1MDA1LCJuYmYiOjE3MDExNzU0ODIuNTU1MDExLCJleHAiOjE3MzI3OTc4ODIuNTQ2NTgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.PW9RnSS91yURMsj_mLmxmroTQ3puhrqviqNSD_HKDT8iI8u0WlRVQtJ4UV7sN1j1KV8_9x2YxsWnzI-YnWuhnHmpDSBbMSYMBGqrNimPiozwPcX0Av3PltCIzSUQ_HcJK-Itq5YYmLbWnrSuzexGu-QhLdqaQerHXj2Rco7eqbnpezhM5xnfkuyIW2BDPDY_LbbyF4IDe6qVxqw_3IdAL8tk_lCuiny9-7qXIXv-BohZG_dlwpinRSA_XT2phsYBu-MS9SHrB19xIPkJRR9pYsGICi8JKfAeh0j-UAGEZzgvOZAygIsUpxxtZ0jfEa0NqLK4etjrn-IUcmnxc2jJlmlG-dAXkxowyKFZZe2WcXJWhBfqsM89681MptyqerfmswOl6vaVsoCTXPWpgDLdkbYShjPVT3g-1wtp2om8gwNCoExmEIBVf_Md8c7kMbgOMGc-ab8ZDdDKKdi7Qkqcv2-LSK6moIfOe9CoRnUgVDLzKkCDJZKj8cKfbhkYbBHVnpVJ4uBhUoYH8vo2jm95h2hCI5cCBjbT4CPh00i0eiMQtPmCqNTcnWEBvcSo75ZTGUjDCe9jk4a9rjGRaMXlQnwbqBXn-h_LCdpw8NgmjA8CkeptXSsDHhPoscnkeWfM3G0MACLfvwvUd-01ALs7AOzsM8XjekFQevRzHUhWT9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "projectRest",
+							"type": "text"
+						},
+						{
+							"key": "intro",
+							"value": "project sederhana restapi",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "blora",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "2000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/project",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjVhOWU1ZDNiZDg5ZWExODc1ZWJmNTQ4MDgwYzUyYzNlN2IyMmQ2ZGM4YWI2ZjgwMzdmNTNmY2E1ODNiNWQwOWQxYjJhNTcxMTQxNzFlYTEiLCJpYXQiOjE3MDExNzU0ODIuNTU1MDA1LCJuYmYiOjE3MDExNzU0ODIuNTU1MDExLCJleHAiOjE3MzI3OTc4ODIuNTQ2NTgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.PW9RnSS91yURMsj_mLmxmroTQ3puhrqviqNSD_HKDT8iI8u0WlRVQtJ4UV7sN1j1KV8_9x2YxsWnzI-YnWuhnHmpDSBbMSYMBGqrNimPiozwPcX0Av3PltCIzSUQ_HcJK-Itq5YYmLbWnrSuzexGu-QhLdqaQerHXj2Rco7eqbnpezhM5xnfkuyIW2BDPDY_LbbyF4IDe6qVxqw_3IdAL8tk_lCuiny9-7qXIXv-BohZG_dlwpinRSA_XT2phsYBu-MS9SHrB19xIPkJRR9pYsGICi8JKfAeh0j-UAGEZzgvOZAygIsUpxxtZ0jfEa0NqLK4etjrn-IUcmnxc2jJlmlG-dAXkxowyKFZZe2WcXJWhBfqsM89681MptyqerfmswOl6vaVsoCTXPWpgDLdkbYShjPVT3g-1wtp2om8gwNCoExmEIBVf_Md8c7kMbgOMGc-ab8ZDdDKKdi7Qkqcv2-LSK6moIfOe9CoRnUgVDLzKkCDJZKj8cKfbhkYbBHVnpVJ4uBhUoYH8vo2jm95h2hCI5cCBjbT4CPh00i0eiMQtPmCqNTcnWEBvcSo75ZTGUjDCe9jk4a9rjGRaMXlQnwbqBXn-h_LCdpw8NgmjA8CkeptXSsDHhPoscnkeWfM3G0MACLfvwvUd-01ALs7AOzsM8XjekFQevRzHUhWT9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "project dimas",
+							"type": "text"
+						},
+						{
+							"key": "intro",
+							"value": "project dimas",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "blorakota",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "3000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/project/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"project",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjVhOWU1ZDNiZDg5ZWExODc1ZWJmNTQ4MDgwYzUyYzNlN2IyMmQ2ZGM4YWI2ZjgwMzdmNTNmY2E1ODNiNWQwOWQxYjJhNTcxMTQxNzFlYTEiLCJpYXQiOjE3MDExNzU0ODIuNTU1MDA1LCJuYmYiOjE3MDExNzU0ODIuNTU1MDExLCJleHAiOjE3MzI3OTc4ODIuNTQ2NTgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.PW9RnSS91yURMsj_mLmxmroTQ3puhrqviqNSD_HKDT8iI8u0WlRVQtJ4UV7sN1j1KV8_9x2YxsWnzI-YnWuhnHmpDSBbMSYMBGqrNimPiozwPcX0Av3PltCIzSUQ_HcJK-Itq5YYmLbWnrSuzexGu-QhLdqaQerHXj2Rco7eqbnpezhM5xnfkuyIW2BDPDY_LbbyF4IDe6qVxqw_3IdAL8tk_lCuiny9-7qXIXv-BohZG_dlwpinRSA_XT2phsYBu-MS9SHrB19xIPkJRR9pYsGICi8JKfAeh0j-UAGEZzgvOZAygIsUpxxtZ0jfEa0NqLK4etjrn-IUcmnxc2jJlmlG-dAXkxowyKFZZe2WcXJWhBfqsM89681MptyqerfmswOl6vaVsoCTXPWpgDLdkbYShjPVT3g-1wtp2om8gwNCoExmEIBVf_Md8c7kMbgOMGc-ab8ZDdDKKdi7Qkqcv2-LSK6moIfOe9CoRnUgVDLzKkCDJZKj8cKfbhkYbBHVnpVJ4uBhUoYH8vo2jm95h2hCI5cCBjbT4CPh00i0eiMQtPmCqNTcnWEBvcSo75ZTGUjDCe9jk4a9rjGRaMXlQnwbqBXn-h_LCdpw8NgmjA8CkeptXSsDHhPoscnkeWfM3G0MACLfvwvUd-01ALs7AOzsM8XjekFQevRzHUhWT9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/project/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"project",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNWRiNGY4YzVjZmM3YzJjMDhiYTI0MjdlMjI4N2EzOTdhNzEwYTkxMTQwNzgxZGYxOTlkMzBkZTk3ZTNmMjI4ZmIwMDgyZjkxMDU3MjQ2N2IiLCJpYXQiOjE3MDExODUyMjEuMTMyNjY5LCJuYmYiOjE3MDExODUyMjEuMTMyNjc1LCJleHAiOjE3MzI4MDc2MjEuMTIzMDgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.OwZzYKbFf606xltUZF3vB2CcFL_wvnGGAmi8wkvmZ3HTRy6Mrgxr4MBZVgQiyGjuT9CzH8p46LMQ-innzoOdgXwCwO4s9wqS-gJg-XMXwgT0a0S8bV-9yUlkZoa9DLod-Hw9nUygbwOKHnlhGq1Y-2Nt5lydoA5LihvLzGlBiE2322BogcK4lBOLLecMcH7BfudIXL-G42Bx2uHWsFsqioX7sNEn8IG1J6XfFeG_6RpowJssUSwcf5WyPCEIprNFUerxGe6ya5pDF9VRwZm865Ib_lt8qk8wi5EnwE5dY0dvOxz20_uEJPN-QFNRnZsYDHNmewpSsmM-dc594QBIZz6NfYQ2NM9wmnh_j-bDQ4_FxBXro4v35enJ24_ONSxXGfKDlfjUGOfjhZMmsBBxM7L2Bg8MctP5woMZK6geIkji6XW-88331-92egE4tkb-D0Uonunct-vELfjIHVItz8Pzbew1ff-pc1PrSLd8brABN6xZ6nQcImwKDt2pK-p_aJOCNZBauvnmBHdNKqeMOL1JmTBp3WcjHEfweVEqxeviCRpTMKA33JzHhog_Dr_I1HN6ciAov-JagSsFbUCCGISCb7-VCuDS_tbylTtDs_3yW_acfVlnPrJPD1DiH_ozAH4hYixbnx9YpFyuAmpzhWFv78EpL_Ch3NESovnF1Ak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNDg2MTA4MjE4ZjI3MGMzMWE2MmVlYjY2NmE1ODk1ZjYwZDZiMmJlNjcwNjQ1YTRlMDdkNzY4N2E1YmQ5MzlhMTA2ZTUzOTVkNGVlZDBiZDQiLCJpYXQiOjE3MDExODAwNDYuMzgwMzQ4LCJuYmYiOjE3MDExODAwNDYuMzgwMzU4LCJleHAiOjE3MzI4MDI0NDYuMzY4NjAzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.aESVfGiTnaasEn3pF7Pwg0kTIj7alejuEEGZp2BGuYbjkXgqlc-39ccOiZgd5N9YDN0dlVQaRsIOAZerMZU09Hnt7aafKQhd9DZJ5DuUi3GYPyzryRttycGROmWbXacNCca8noY7o2HdLqaSC0lPrElIyU76XqPn8wTU0QnFJsDO0xT7P6sls9CxczEzCCHkvqp95jlgDJMXrG6VytaU_jBrKRDyUvd3dmh7DlhX2BOvz8zio429E4CushHtVNOfly7crYMy73dOyCst-5503dbAIWZDA_Jr7k1Mhu3A8UD94bpOnY46147tqa0ws-4AGi00Zzm1rOR4yCHk2xRpD4BcoyXp5ILy6Ne4El37nck7lWyYD2tDJIFDbPxcdz1nyzoHteMEhbrud4NrM0Rjx4ggf4sFx1JMNAHJzhpXda9UwtNdOfVT6sn7yzuHr_toPK15JzN_xFhaMzZasY6n6MAGJw3YeNcwdqV6ZN0TAvZawlnu280LY7aJjpFs3hbUZp2fzxEW0-tcu3E9l03mfLePemWlU8mReu5yZAZdwwagLcJDSL4oppD1ByOS-pyXmIPtnWNLEr9KA0gJbOLIdBuYNrerKf_-MxHeTeiyp_8ivfCdLwWfICySctb7bp1g612a8i62sKrLAxe1usE5ZQcjNRTxDoDk8Fv-V9K6YjY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "diamas444@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Akugtaau4244",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
